@@ -1,1 +1,37 @@
-hello
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- the charracter encoding used in the HTML file-->
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <!-- the view point is the user visible area of the webpage-->
+        <meta name="author" content="Kunal mittal">
+        <meta name="description" content="Intro to DOM">
+        <meta name="keyword" content="HTML,CSS,SEO,WEB,WEB DEVELOPMENT">
+        <title>javascript DOM</title>
+        <link rel="shortcut icon" href="./assests/img/icon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="assests/style/index.css" media="all">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&family=Roboto:wght@400;500&display=swap" >
+        <script src="assests/script/index.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="heading">Number Guessing Game</div>
+                <h3>Guess a number between 1-100.</h3>
+                <input type="text" placeholder="Input Number" class="guess">
+                <button onclick="play()" class="my_btn">GUESS</button>
+                <div class="display">
+                    <p class="message3"></p>
+                    <p class="message2">Guessed Numbers are: None</p>
+                    
+                </div>
+                <p class="message1">No. Of Guesses: 0</p>
+                
+            </div>
+        </main>
+    </body>
+</html>
