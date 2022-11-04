@@ -45,12 +45,14 @@ onEvent('click', btn, function () {
             msg1.innerText = "Your guess is too low.";
             msg2.innerText = "No. of guesses left : " + noOfGuess;
             msg3.innerText = "Guessed numbers are: " + guessedNums;
-            userGuess.value = '0 ';
+            
+            
         } else if (userGuess < answer && noOfGuess >= 0) {
             msg1.innerText = "Your guess is too high.";
             msg2.innerText = "No. of guesses left: " + noOfGuess;
             msg3.innerText = "Guessed numbers are: " + guessedNums;
-            userGuess.value = ' 0';
+            
+            
         } else if (userGuess == answer && noOfGuess >= 0) {
             msg1.innerText = "You Won ";
             msg2.innerText = "The number was: " + answer;
