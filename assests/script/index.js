@@ -41,29 +41,27 @@ onEvent('click', btn, function () {
         guessedNums.push(userGuess);
         noOfGuess -= 1;
 
-        if (userGuess > answer && noOfGuess >= 0) {
+        if (userGuess < answer && noOfGuess >= 0) {
             msg1.innerText = "Your guess is too low.";
             msg2.innerText = "No. of guesses left : " + noOfGuess;
             msg3.innerText = "Guessed numbers are: " + guessedNums;
             
             
-        } else if (userGuess < answer && noOfGuess >= 0) {
+        } else if (userGuess > answer && noOfGuess >= 0) {
             msg1.innerText = "Your guess is too high.";
             msg2.innerText = "No. of guesses left: " + noOfGuess;
             msg3.innerText = "Guessed numbers are: " + guessedNums;
             
             
-        } else if (userGuess == answer && noOfGuess >= 0) {
+        } else if (userGuess = answer && noOfGuess >= 0) {
             msg1.innerText = "You Won ";
             msg2.innerText = "The number was: " + answer;
             msg3.innerText = "You Guessed numbers in  " + noOfGuess + "guesses";
-            userGuess.value = ' 0';
+            userGuess.value = ' ';
             
             
 
-        } else if ( noOfGuess = 0 && userGuess == answer){
-            alert('Play Again !');
-        }
+         } 
     }
     
     
