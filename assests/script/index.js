@@ -45,15 +45,17 @@ onEvent('click', btn, function () {
             msg1.innerText = "Your guess is too low.";
             msg2.innerText = "No. of guesses left : " + noOfGuess;
             msg3.innerText = "Guessed numbers are: " + guessedNums;
+            userGuess.value = '0 ';
         } else if (userGuess < answer && noOfGuess >= 0) {
             msg1.innerText = "Your guess is too high.";
             msg2.innerText = "No. of guesses left: " + noOfGuess;
             msg3.innerText = "Guessed numbers are: " + guessedNums;
+            userGuess.value = ' 0';
         } else if (userGuess == answer && noOfGuess >= 0) {
             msg1.innerText = "You Won ";
             msg2.innerText = "The number was: " + answer;
             msg3.innerText = "You Guessed numbers in  " + noOfGuess + "guesses";
-            userGuess.value = ' ';
+            userGuess.value = ' 0';
             
             
 
@@ -62,14 +64,15 @@ onEvent('click', btn, function () {
         }
     }
     
+    
 });
 
 onEvent('click', restart , function(){
-    if(noOfGuess == 0 || userGuess == answer){
-        //msg1.innerText = "Play Again ";
-        // msg2.innerText = "The number was: " + answer;
-        // msg3.innerText = "You Guessed numbers in  " + noOfGuess + "guesses";
-        userGuess.value = ' ';
-    }
+        userGuess = select('.guess').value;
+        msg1.innerText = "Play Again ";
+        msg2.innerText = ' TRY AGAIN';
+        msg3.innerText =  '' ;
+        userGuess = ' ';
+
 });
 
