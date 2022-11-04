@@ -1,0 +1,98 @@
+@import './reset.css';
+ 
+:root {
+ --app-dark-bg: #1a1d28;
+ --app-red: #ff3c57;
+ --app-green: #33ab4e;
+ --app-purple: #833cff;
+ --app-orange: #ff833c;
+ --app-blue: #3c57ff;
+ --app-blue-hover: #364ee6;
+}
+ 
+body {
+    height: 100vh;
+    background-color: var(--app-dark-bg);
+}
+ 
+.container {
+ width: min(100% - 30px, 1280px);
+ margin-inline: auto;
+
+ position: absolute;
+ width: 50%;
+ min-width: 350px;
+ max-width: 400px;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ background-color: #ffffff;
+ padding: 50px 10px;
+ border-radius: 5px;
+ display: grid;
+ justify-items: center;
+}
+
+.heading{
+    
+    
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    height: 35px;
+    margin-top: -50px;
+  }
+  h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(12, 130, 200);
+    
+  }
+  
+input[type="text"]{
+    
+    font-weight: 600;
+    color: #663399;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid #545050;
+    font-size: 28px;
+  }
+  button{
+    margin-top: 20px;
+    width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    background-color: #1353d0;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+  }
+
+  .display{
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+    min-width: 300px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  p{
+    font-weight: 400;
+  }
+  .message1{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #1135b6;
+  }
+
+  .restart {
+    right: 43%;
+    bottom: 5%;
+    position: fixed;
+  }
