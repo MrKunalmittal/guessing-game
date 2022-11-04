@@ -69,12 +69,8 @@ onEvent('click', btn, function () {
     
 });
 
-onEvent('click', restart , function(){
-        userGuess = select('.guess').value;
-        msg1.innerText = "Play Again ";
-        msg2.innerText = ' TRY AGAIN';
-        msg3.innerText =  '' ;
-        userGuess = ' ';
 
+restart.addEventListener('click', ()=>{
+    location.reload();
 });
 
