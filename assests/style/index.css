@@ -13,7 +13,7 @@
 body {
     height: 100vh;
     background-color: var(--app-dark-bg);
-    background-image: url(..img)
+    background-image: url(../img/numbers.jpg)
 }
  
 .container {
